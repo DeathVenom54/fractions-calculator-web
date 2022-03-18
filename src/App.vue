@@ -1,9 +1,11 @@
 <script setup lang="ts">
 
+import Calculator from "./components/Calculator.vue";
 </script>
 
 <template>
   <h1>Fractions Calculator</h1>
+  <Calculator />
 </template>
 
 <style>
