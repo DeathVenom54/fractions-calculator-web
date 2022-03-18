@@ -37,6 +37,10 @@ export class Fraction {
     this._den /= h;
   }
 
+  toString(): string {
+    return `${this._num}/${this._den}`;
+  }
+
   static add(frac1: Fraction, frac2: Fraction): Fraction {
     const lcmOfDen = lcm(frac1._den, frac2._den);
     const num1 = (lcmOfDen / frac1._den) * frac1._num;
